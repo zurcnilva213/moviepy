@@ -129,7 +129,7 @@ class VideoClip(Clip):
         imsave(filename, im)
 
     @requires_duration
-    @use_clip_fps_by_default
+    # @use_clip_fps_by_default
     @convert_masks_to_RGB
     def write_videofile(self, filename, fps=None, codec=None, withmask=False,
                         bitrate=None, audio=True, audio_fps=44100,
